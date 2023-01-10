@@ -4,7 +4,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
+
 import { LoginModule, LoginRoutingModule } from './autenticacao';
+import { CadastroPjModule, CadastroPjRoutingModule } from './autenticacao';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -18,6 +20,8 @@ import { AppRoutingModule } from './app-routing.module';
     BrowserAnimationsModule,
     LoginModule,
     LoginRoutingModule,
+    CadastroPjModule,
+    CadastroPjRoutingModule,
        
     AppRoutingModule
   ],
