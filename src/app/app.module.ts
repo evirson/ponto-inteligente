@@ -1,12 +1,16 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AppComponent } from './app.component';
 
 import { LoginModule, LoginRoutingModule } from './autenticacao';
-import { CadastroPjModule, CadastroPjRoutingModule } from './autenticacao';
+import { CadastroPjModule, CadastroPjRoutingModule} from './autenticacao';
+import { CadastroPfModule, CadastroPfRoutingModule } from './autenticacao';
+import { FuncionarioModule } from './funcionario';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -18,10 +22,16 @@ import { AppRoutingModule } from './app-routing.module';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    MatToolbarModule,
+    MatIconModule,
+    FlexLayoutModule,
     LoginModule,
     LoginRoutingModule,
     CadastroPjModule,
     CadastroPjRoutingModule,
+    CadastroPfModule,
+    CadastroPfRoutingModule,
+    FuncionarioModule,
        
     AppRoutingModule
   ],
