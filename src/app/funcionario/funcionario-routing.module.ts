@@ -24,4 +24,4 @@ export const FuncionarioRoutes: Routes = [
   imports: [RouterModule.forChild(FuncionarioRoutes)],
   exports: [RouterModule],
 })
-export class CadastroPfRoutingModule {}
+export class FuncionarioRoutingModule {}

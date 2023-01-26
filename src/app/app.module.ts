@@ -10,7 +10,7 @@ import { AppComponent } from './app.component';
 import { LoginModule, LoginRoutingModule } from './autenticacao';
 import { CadastroPjModule, CadastroPjRoutingModule} from './autenticacao';
 import { CadastroPfModule, CadastroPfRoutingModule } from './autenticacao';
-import { FuncionarioModule } from './funcionario';
+import { FuncionarioModule, FuncionarioRoutingModule } from './funcionario';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -32,6 +32,7 @@ import { AppRoutingModule } from './app-routing.module';
     CadastroPfModule,
     CadastroPfRoutingModule,
     FuncionarioModule,
+    FuncionarioRoutingModule,
        
     AppRoutingModule
   ],
