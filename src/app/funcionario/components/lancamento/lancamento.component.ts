@@ -12,6 +12,22 @@ declare var navigator: any;
   templateUrl: './lancamento.component.html',
   styleUrls: ['./lancamento.component.css']
 })
-export class LancamentoComponent {
+export class LancamentoComponent implements OnInit {
+
+  private dataAtualEn: string; 
+  public dataAtual: string;
+  public geoLocation: string;
+  public ultimoTipoLancado: string;
+
+  constructor(
+    private snackBar: MatSnackBar,
+    private router: Router
+  ) { }
+
+  ngOnInit(): void {
+    this.dataAtual = moment().format('DD/MM/YYYY');
+    
+  }
+
 
 }
